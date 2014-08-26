@@ -1,0 +1,156 @@
+/*!
+ * Bounce Template v2.1 - Blue
+ * More colors coming soon! 
+ *
+ * Built with Bootstrap v2.2.2
+ * http://twitter.github.com/bootstrap
+ */
+.sleek {
+  /* Navbar
+  -------------------------------------------------- */
+
+  /* Landing
+  -------------------------------------------------- */
+
+  /* Page Header
+  -------------------------------------------------- */
+
+  /* Main Content
+  -------------------------------------------------- */
+
+  /*.bouncy:hover i {
+      color: #0074CC;
+  } */
+
+  /* Pricing Tables
+  -------------------------------------------------- */
+
+  /* Footer
+  -------------------------------------------------- */
+
+  /* Copywrite
+  -------------------------------------------------- */
+
+  /* Mobile Defaults
+  ------------------------- */
+
+}
+.sleek .navbar-inner {
+  background-color: #1b1b1b;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#222222), to(#111111));
+  background-image: -webkit-linear-gradient(top, #222222, #111111);
+  background-image: -moz-linear-gradient(top, #222222, #111111);
+  background-image: -o-linear-gradient(top, #222222, #111111);
+  background-image: linear-gradient(to bottom, #222222, #111111);
+}
+.sleek .navbar .brand {
+  color: #FFFFFF;
+}
+.sleek .navbar .nav > li > a {
+  color: #D6DFE5;
+}
+.sleek .navbar .nav > li > a:hover {
+  color: #FFFFFF;
+}
+.sleek .navbar .nav > li.active > a,
+.sleek .navbar .nav > li.active:hover > a,
+.sleek .navbar .nav > .active > a,
+.sleek .navbar .nav > .active > a:hover,
+.sleek .navbar .nav > .active > a:focus {
+  background: none repeat scroll 0 0 transparent;
+  border-bottom: 2px solid #308CCF;
+  color: #FFFFFF;
+}
+.sleek #landing h1 {
+  color: #308CCF;
+}
+.sleek #landing p {
+  color: #394755;
+}
+.sleek #landing .carousel-control {
+  color: #0088CC;
+}
+.sleek #landing .carousel-control:hover {
+  color: #17405E;
+}
+.sleek #landingSlide {
+  background: url("../img/landing.png") no-repeat scroll center 200px #f1f1f1;
+}
+.sleek #header {
+  background: none repeat scroll 0 0 #F1F1F1;
+}
+.sleek #header h1 {
+  color: #308CCF;
+}
+.sleek #content {
+  background: #fff; /* url("../img/noise.png") repeat scroll 0 0 #ffffff;*/
+  color: #394755;
+}
+.sleek .product-plan {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border: 1px solid #CCCCCC;
+}
+.sleek ul.plans {
+  margin: 0;
+}
+.sleek .product-plan .name {
+  background: none repeat scroll 0 0 #394755;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.sleek .product-plan .name h3 {
+  color: #D6DFE5;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.5);
+}
+.sleek .product-plan .price {
+  background: none repeat scroll 0 0 #F1F1F1;
+  border-bottom: 1px solid #CCCCCC;
+  border-top: 1px solid rgba(255, 255, 255, 0.8);
+}
+.sleek .product-plan .price h3 {
+  color: #308CCF;
+}
+.sleek .product-plan .feature {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-bottom: 1px solid #CCCCCC;
+}
+.sleek .product-plan .action {
+  background: none repeat scroll 0 0 #F1F1F1;
+}
+.sleek .product-plan.popular .name {
+  background: none repeat scroll 0 0 #308CCF;
+  color: #FFFFFF;
+}
+.sleek .product-plan.popular .name h3 {
+  color: #FFFFFF;
+}
+.sleek #footer {
+  color: #17405E;
+}
+.sleek #footer h3 {
+  color: #308CCF;
+}
+.sleek #footer a {
+  color: #17405E;
+}
+.sleek #footer a:hover {
+  color: #333333;
+}
+.sleek #copyright {
+  background: none repeat scroll 0 0 #222;
+  color: #D6DFE5;
+}
+@media (max-width: 979px) {
+  .sleek .navbar .nav-collapse .nav > li.active > a,
+  .sleek .navbar .nav-collapse .nav > li.active:hover > a,
+  .sleek .navbar .nav-collapse .nav .active > a,
+  .sleek .navbar .nav-collapse .nav .active > a:hover,
+  .sleek .navbar .nav-collapse .nav .active > a:focus {
+    background-color: #308CCF;
+  }
+  .sleek .navbar .nav-collapse .nav > li > a:hover {
+    background-color: #308CCF;
+  }
+  .sleek .product-plan .feature .pull-right {
+    color: #308CCF;
+  }
+}
