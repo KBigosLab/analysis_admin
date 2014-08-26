@@ -26,6 +26,7 @@
     "passport-google": "^0.3.0",
     "cookie-signature": "^1.0.4",
     "ua-parser": "^0.3.3",
-    "validator": "^3.17.0"
+    "validator": "^3.17.0",
+    "scrypt": "^3.0.1"
   }
 }

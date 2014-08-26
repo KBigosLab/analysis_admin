@@ -2,7 +2,7 @@
 function bindLogoutScript() {
   $('#LogOutLink').click(function(e){
     e.preventDefault();
-    $.post('logout', {},parseResult(function() {location.replace('/login')}));
+    $.post('logout', {},parseResult(function() {location.replace('/')}));
   });
 }
 
