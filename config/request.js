@@ -123,7 +123,7 @@ exports.setupEnv = function($P) {
 }
 
 exports.checkLogin = function($P,script) {
-/*  // Check for log in (and if not logged in, use landing template)
+  // Check for log in (and if not logged in, use landing template)
   if (!$P.loggedIn) {
 //    $P.template = $P.views.landing;
 
@@ -137,8 +137,6 @@ exports.checkLogin = function($P,script) {
     } else if (!script.requires) return true;
   } else $P.template = $P.commonTemplate;
 
-  return true;*/
-  $P.loggedIn = true;
   return true;
 }
 
