@@ -11,7 +11,7 @@ exports.main = function($P) {
     canArchive: db.analysis.tableExists('worklist') && db.analysis.check(),
     archived: db.analysis.checkTables(),
     currentModel: hasWorklist ? db.analysis.getCurrentModel() : 0,
-    hasOutstandingJobs: db.analysis.hasOutstandingJobs(),
+    hasOutstandingJobs: hasWorklist && db.analysis.hasOutstandingJobs(),
     hasWorklist: hasWorklist,
     hasResults: db.analysis.hasResults(),
     availableModels: db.analysis.getAvailableModels(),
