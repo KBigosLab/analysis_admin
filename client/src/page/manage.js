@@ -14,6 +14,14 @@ function manage(bind,args) {
     });
   }
 
+  setInterval(function() {
+    $.post('getStatus',{},function(res) {
+      var status = fs.index('userID',res.status);
+      for (var k in status) {
+        nodeIndex[status[k].userID].response(status[k].response);
+      }
+    });
+  },2000);
 }
 
 module.exports = manage;
