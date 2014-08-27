@@ -1,0 +1,32 @@
+.ui-LoginBox
+  .sleek
+    .well.well-form.txt-lefty
+      div(style='height:150px')
+        h3 Sign in
+        .form-extra
+          button.btn.btn-large(style='width:200px',data-bind='click:withGoogle') with Google
+    .center(style='font-size:80%') If you don't have gmail, click <a href="#" data-bind='click:useTraditionalLogin'>here</a>.
+    .traditionalLogin.mtl(data-bind='visible:traditionalLoginVisible')
+      .traditionalBox.well.well-form.txt-lefty.fadeInHover
+        div(style='height:210px')
+          h3 Traditional log in
+          form
+            .control-group
+              .controls
+                .input-prepend
+                  span.add-on
+                    i.icon-user
+                  input.span3(type='email',  placeholder='Email', required='', data-bind='value:email')
+                div(style='color:red',data-bind='validationMessage:email')
+                .help-block
+            .control-group
+              .controls
+                .input-prepend
+                  span.add-on
+                    i.icon-lock
+                  input.span3(type='password', name='password', placeholder='Password', required='', data-bind='value:password')
+                div(style='color:red',data-bind='validationMessage:password')
+                .help-block
+              button.btn(type='submit', data-bind='click:withPassword') Sign In
+      .center(style='width:100px;height:50px')
+

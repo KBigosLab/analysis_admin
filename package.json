@@ -17,15 +17,17 @@
   },
   "homepage": "https://github.com/KBigosLab/analysis_admin",
   "dependencies": {
-    "fibers": "^1.0.2",
+    "fibers": "~1.0.0",
     "jade": "~0.27.7",
     "express": "~3.0.1",
     "dateformat": "^1.0.8-1.2.3",
     "debug-trace": "^0.2.3",
-    "passport": "^0.2.0",
-    "passport-google": "^0.3.0",
-    "cookie-signature": "^1.0.4",
+    "cookie-signature": "~1.0.1",
     "ua-parser": "^0.3.3",
-    "validator": "^3.17.0"
+    "validator": "^3.17.0",
+    "connect-redis": "~1.4.5",
+    "scrypt": "^3.0.1",
+    "passport": "^0.2.0",
+    "passport-google-oauth": "^0.1.5"
   }
 }

@@ -37,7 +37,7 @@ exports.handlePageError = function($P,e,args) {
   if (e.tellUser) {
     var errorObj = {error:{msg:e.message}};
   } else {
-    var errorObj = {error:{msg:'Internal server error. It would be greatly appreciated if you report this as a bug to support@osmosis.org.',type:'Internal'}};
+    var errorObj = {error:{msg:'Internal server error. It would be greatly appreciated if you report this as a bug.',type:'Internal'}};
     e.httpStatus = 500;
   }
 

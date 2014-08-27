@@ -41,7 +41,7 @@ excludes= client/3rd , node_modules , node_modules/fusion/node_modules
 # includes happens after excludes and is a mechanism of adding subdirectories
 # from parent directories that were excluded
 
-includes= node_modules/osmosis , client/src , views , routes , node_modules/fusion
+includes= node_modules/analysis , client/src , views , routes , node_modules/fusion
 
 
 

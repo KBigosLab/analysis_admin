@@ -1,4 +1,5 @@
 
+var keygen = require('analysis/keygen');
 var signature = require('cookie-signature');
 
 exports.cookieParser = null;
@@ -47,4 +48,15 @@ exports.configure = function(express,app) {
     exports.sessionStore = new express.session.MemoryStore;
     app.use(express.session({store: exports.sessionStore} ));
   }
+
+  // We modify the session store here so that if a properly signed cookie is
+  // passed that does not exist, it will be restored with a session containing
+  // the exact same session id
+  exports.sessionStore.generate = function(req) {
+    if (!req.regenerateSessionID)
+      req.sessionID = keygen.uid(24)
+    else req.sessionID = req.regenerateSessionID;
+    req.session = new express.session.Session(req);
+    req.session.cookie = new express.session.Cookie({});
+  };
 }

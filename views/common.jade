@@ -36,15 +36,8 @@ html(lang="en")
                       span.mls.mrs#titleBarUserName(style='font-family:"Helvetica Neue", Helvetica, Arial, sans-serif; font-size:15px') #{preferredName} #{lastName}
                       span.login-caret.caret(style='border-top-color: white')
                     ul.dropdown-menu
-                      - if (userID==rootUser)
-                        li
-                          a(href="account")
-                        li.divider
                       li
                         a#LogOutLink(href="#")='Sign Out'
-
-    // - Content Body
-    #Fullscreen.init(style='position: absolute; left: 0; padding-top:10px;height:300px; z-index:999; overflow: hidden')
 
     // - Content Body
     #OuterContainer.container(style='padding-top:30px; z-index:1000')

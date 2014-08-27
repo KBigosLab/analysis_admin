@@ -1,0 +1,9 @@
+.ui-Computer.mtxl
+  .fwb(data-bind='text: computer.name')
+  button.btn.btn-success.mls(data-bind='click: startSignal') Send Start Signal
+  button.btn.btn-danger.mls(data-bind='click: stopSignal') Send Stop Signal
+  button.btn.btn-warning.mls(data-bind='disable: monitoring, click: monitor') Monitor
+  button.btn.btn-primary.mls(data-bind='click: ping') Ping
+  div.fcg(style='font-size:80%') Please note: Although not necessarily required, it's best to delete the contents of the <b>Work</b> and <b>Results</b> folders to make sure we're getting a clean start before sending the Start signal.
+  .mlm
+    .nodeList
