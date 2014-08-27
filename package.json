@@ -27,6 +27,7 @@
     "cookie-signature": "^1.0.4",
     "ua-parser": "^0.3.3",
     "validator": "^3.17.0",
+    "connect-redis": "~1.4.5",
     "scrypt": "^3.0.1"
   }
 }
