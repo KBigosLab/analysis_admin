@@ -1,2 +1,27 @@
 .page-create
-
+  .mbl
+    h2 1. Archive Analysis
+    .mlm
+      div When an analysis is complete, archive it so that no more results can be added to the table.
+      button.btn.btn-danger.btn-large(data-bind='disable: archived() || !hasResults() || !canArchive(), click: archive') Archive Current Analysis
+  .mbl
+    h2 2. Create New Analysis
+    .mlm
+      div If there are no active analyses, you can create a new one from a selection of drug models.
+      div
+        select(data-bind='disable: !archived(), options:availableModels, optionsText: "name", optionsValue: "id", value: selectedModel')
+      button.btn.btn-success.btn-large(data-bind='disable: !archived(), click: createNewAnalysis') Create New Analysis
+      div Before running the full analysis, you should <a href="/manage">test it</a>, then return to this page, reset the worklist, and then start the analysis.
+  .mbl
+    h2 3. Reset Worklist
+    .mlm
+      div If no results have been committed (i.e., you've just run a quick test), the worklist can be reset.
+      button.btn.btn-primary.btn-large(data-bind='disable: hasResults() || !hasWorklist(), click: resetWorklist') Reset Worklist
+      div You can start the actual analysis <a href="/manage">here</a>.
+  .mbl
+    h2 Other
+    h4 Clear Dead Jobs
+    .mlm
+      div At the end of an analysis, any crashes will leave "dead" jobs behind. Clear these jobs and then restart the analysis.
+      button.btn.btn-inverse(data-bind='disable: !hasOutstandingJobs(), click: clearDeadJobs') Clear Dead Jobs
+      div Restart the analysis <a href="/manage">here</a>.
